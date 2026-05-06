@@ -5,12 +5,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_gemini_model():
-    # Configuration optimisée pour ton projet Mira
+    # Configuration 
     return ChatGoogleGenerativeAI(
         model="gemini-2.5-flash",
         google_api_key=os.getenv("GOOGLE_API_KEY").strip(),
         temperature=0.3, # Plus bas pour être plus précis et moins bavard
-        max_output_tokens=1024,
+        max_output_tokens=2000,
     )
 
 # Prompt de sécurité pour le système
@@ -33,6 +33,6 @@ if __name__ == "__main__":
         # Test simple
         res = model.invoke("Dis : Système opérationnel")
         print(f"\nIA : {res.content}")
-        print("\n>>> TEST RÉUSSI ✅")
+        print("\n>>> TEST RÉUSSI ")
     except Exception as e:
         print(f"\n>>> ERREUR : {e}")

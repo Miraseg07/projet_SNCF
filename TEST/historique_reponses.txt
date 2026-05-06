@@ -1,0 +1,89 @@
+
+
+============================================================
+DATE     : 2026-05-06 02:22:25
+GARE     : Paris Gare du Nord
+QUESTION : Quels sont les horaires et y a-t-il des paniers fraicheur ?
+------------------------------------------------------------
+REPONSE  :
+Bonjour,
+
+En tant qu'agent HORIZON AI, voici les informations disponibles concernant votre demande :
+
+*   **Horaires :** Information non trouvée pour les horaires. [Source: INFO SYSTÈME]
+*   **Paniers Fraîcheur :** La gare de Paris Gare du Nord ne dispose pas de ce service. [Source: INFO SYSTÈME]
+============================================================
+
+============================================================
+DATE     : 2026-05-06 02:22:27
+GARE     : Rosa Parks
+QUESTION : Quels sont les horaires des paniers fraicheur ?
+------------------------------------------------------------
+REPONSE  :
+Agent HORIZON AI à votre service.
+
+Voici les informations concernant les horaires des paniers fraîcheur :
+
+*   **Gare :** Rosa Parks
+*   **Jour :** Lundi
+*   **Horaire :** 17h00 à 20h00
+[Source: paniers-fraicheur.csv]
+============================================================
+
+============================================================
+DATE     : 2026-05-06 02:22:33
+GARE     : Paris Gare du Nord
+QUESTION : Est-ce qu'il y a du Wi-Fi dans cette gare ?
+------------------------------------------------------------
+REPONSE  :
+Agent HORIZON AI à votre service.
+
+Concernant votre question sur la disponibilité du Wi-Fi dans cette gare :
+*   Information non trouvée pour le service Wi-Fi dans
+============================================================
+
+============================================================
+DATE     : 2026-05-06 02:49:14
+GARE     : Paris Gare du Nord
+QUESTION : Quels sont les horaires et y a-t-il des paniers fraicheur ?
+------------------------------------------------------------
+REPONSE  :
+Erreur Gemini : Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 45.866684945s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}
+============================================================
+
+============================================================
+DATE     : 2026-05-06 02:49:49
+GARE     : Rosa Parks
+QUESTION : Quels sont les horaires des paniers fraicheur ?
+------------------------------------------------------------
+REPONSE  :
+Erreur Gemini : Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 11.083644221s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}
+============================================================
+
+============================================================
+DATE     : 2026-05-06 02:50:23
+GARE     : Paris Gare du Nord
+QUESTION : Est-ce qu'il y a du Wi-Fi dans cette gare ?
+------------------------------------------------------------
+REPONSE  :
+Erreur Gemini : Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 36.876958462s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}
+============================================================
+
+============================================================
+DATE     : 2026-05-06 02:50:58
+GARE     : Asnieres-sur-Seine
+QUESTION : Ou se trouvent les paniers fraicheur et a quelle heure ?
+------------------------------------------------------------
+REPONSE  :
+Erreur Gemini : Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 2.287094587s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}
+============================================================
+
+============================================================
+DATE     : 2026-05-06 02:51:32
+GARE     : Saint-Cloud
+QUESTION : Je cherche les paniers fraicheur, quel jour passent-ils ?
+------------------------------------------------------------
+REPONSE  :
+Erreur Gemini : Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 28.014249257s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}
+============================================================
+

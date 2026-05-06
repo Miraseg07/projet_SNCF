@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORIZON AI — Excellence Ferroviaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --sncf-blue: #001935;
+            --sncf-red: #e2001a;
+            --sncf-gradient: linear-gradient(135deg, #001935 0%, #e2001a 100%);
+            --bg-light: #f0f4f8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: var(--bg-light);
+            color: var(--sncf-blue); 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            overflow: hidden; 
+        }
+
+        /* HEADER FIXE */
+        header { 
+            background: white;
+            padding: 10px 60px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        .logo-container { display: flex; align-items: center; gap: 15px; }
+        
+        /* LOGO TRAIN REMPLAÇANT */
+        .train-logo-fix { 
+            background: var(--sncf-red);
+            color: white;
+            width: 40px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+
+        .brand h1 { font-size: 1.2rem; font-weight: 800; line-height: 1; }
+        .brand span { color: var(--sncf-red); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; }
+
+        /* BARRE DE RECHERCHE */
+        .search-section { background: var(--sncf-blue); padding: 15px; display: flex; justify-content: center; }
+        .search-box { position: relative; width: 100%; max-width: 550px; }
+        .input-group {
+            background: white; border-radius: 10px; padding: 2px 20px;
+            display: flex; align-items: center; gap: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .input-group input { border: none; outline: none; width: 100%; padding: 10px 0; font-size: 0.9rem; font-weight: 500; }
+
+        /* CONTAINER DÉZOOMÉ */
+        .app-container { 
+            display: grid; 
+            grid-template-columns: 320px 1fr; 
+            gap: 25px; 
+            flex: 1; 
+            padding: 20px 60px; 
+            min-height: 0; 
+        }
+
+        /* SIDEBAR */
+        .info-sidebar { display: flex; flex-direction: column; gap: 20px; overflow-y: auto; }
+        
+        .card-rag { 
+            background: var(--sncf-gradient);
+            color: white;
+            padding: 20px; 
+            border-radius: 20px; 
+            box-shadow: 0 8px 25px rgba(0,25,53,0.15);
+        }
+        .card-rag h3 { font-size: 0.95rem; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+        .card-rag p { font-size: 0.8rem; line-height: 1.5; opacity: 0.95; }
+
+        .card { background: white; padding: 20px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); }
+        .card h3 { font-size: 0.9rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+
+        .service-static {
+            background: #f8fafc; padding: 10px 15px; border-radius: 10px;
+            display: flex; align-items: center; gap: 12px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px;
+        }
+        .service-static i { color: var(--sncf-red); font-size: 0.9rem; width: 15px; text-align: center; }
+
+        /* CHAT VIEW DÉZOOMÉ */
+        .chat-view { 
+            background: white; border-radius: 25px; display: flex; flex-direction: column; 
+            height: 100%; min-height: 0; border: 1px solid rgba(0,0,0,0.08); 
+        }
+
+        .messages { 
+            flex: 1; padding: 30px 80px; 
+            overflow-y: auto; display: flex; flex-direction: column; gap: 20px; 
+            scroll-behavior: smooth;
+        }
+
+        .msg { 
+            max-width: 65%; 
+            padding: 14px 20px; border-radius: 18px; 
+            font-size: 0.9rem; 
+            line-height: 1.5;
+        }
+        .bot { background: #f1f5f9; align-self: flex-start; border-bottom-left-radius: 4px; color: var(--sncf-blue); }
+        .user { background: var(--sncf-gradient); color: white; align-self: flex-end; border-bottom-right-radius: 4px; }
+
+        /* INPUT AREA */
+        .chat-input-area { padding: 20px 80px; background: white; border-top: 1px solid #f1f5f9; display: flex; gap: 15px; }
+        .input-wrapper { 
+            flex: 1; background: #f1f5f9; border-radius: 12px; padding: 0 20px; 
+            display: flex; align-items: center; border: 1px solid rgba(0,0,0,0.05);
+        }
+        .input-wrapper input { border: none; background: transparent; width: 100%; padding: 12px 0; font-size: 0.9rem; outline: none; color: var(--sncf-blue); }
+        
+        .btn-send { 
+            width: 42px; height: 42px; background: var(--sncf-blue); color: white; 
+            border: none; border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+            transition: 0.3s;
+        }
+        .btn-send:hover { background: var(--sncf-red); transform: scale(1.05); }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: absolute; top: 110%; left: 0; width: 100%; background: white; border-radius: 10px;
+            max-height: 250px; overflow-y: auto; box-shadow: 0 15px 35px rgba(0,0,0,0.15); display: none; z-index: 1000;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .dropdown-item { padding: 10px 20px; cursor: pointer; font-size: 0.85rem; border-bottom: 1px solid #f1f5f9; font-weight: 600; color: var(--sncf-blue); transition: 0.2s; }
+        .dropdown-item:hover { background: #fdf2f2; color: var(--sncf-red); padding-left: 30px; }
+
+        .loading { font-size: 0.85rem; color: #94a3b8; font-style: italic; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <div class="train-logo-fix"><i class="fa-solid fa-train-subway"></i></div>
+        <div class="brand"><h1>Horizon AI</h1><span>Intelligence Ferroviaire</span></div>
+    </div>
+    <div style="font-size: 0.7rem; color: #64748b; text-align: right; line-height: 1.2; max-width: 250px;">
+        Plateforme LLM basée sur les <b>Données Publiques SNCF</b>.
+    </div>
+</header>
+
+<section class="search-section">
+    <div class="search-box">
+        <div class="input-group">
+            <i class="fa-solid fa-location-dot" style="color:var(--sncf-red); font-size: 0.9rem;"></i>
+            <input type="text" id="stationInput" placeholder="Quelle gare recherchez-vous ?" autocomplete="off">
+        </div>
+        <div id="stationDropdown" class="dropdown"></div>
+    </div>
+</section>
+
+<div class="app-container">
+    <aside class="info-sidebar">
+        <div class="card-rag">
+            <h3><i class="fa-solid fa-microchip"></i> Horizon à votre service</h3>
+            <p>
+                Bienvenue à bord ! Horizon AI est une plateforme <b>LLM RAG</b> conçue pour assister chaleureusement les voyageurs. 
+                <br><br>
+                Notre intelligence puise dans les <b>données publiques SNCF</b> pour vous guider sereinement en station.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fa-solid fa-list-check" style="color:var(--sncf-red)"></i> Services</h3>
+            <div class="service-list">
+                <div class="service-static"><i class="fa-solid fa-clock"></i><span>Horaires</span></div>
+                <div class="service-static"><i class="fa-solid fa-wheelchair"></i><span>Accès PMR</span></div>
+                <div class="service-static"><i class="fa-solid fa-leaf"></i><span>Paniers Frais</span></div>
+                <div class="service-static"><i class="fa-solid fa-music"></i><span>Pianos</span></div>
+                <div class="service-static"><i class="fa-solid fa-wifi"></i><span>Work & Connect</span></div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="chat-view">
+        <div class="messages" id="chatBox">
+            <div class="msg bot">
+                <b>Ravi de vous voir !</b><br>
+                Je suis Horizon, votre compagnon de gare. Pour que je puisse accéder aux registres de votre station, merci de <b>sélectionner une gare</b> ci-dessus. 
+                <br><br>
+                Où partez-vous aujourd'hui ?
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <div class="input-wrapper"><input type="text" id="userInput" placeholder="Posez votre question ici..."></div>
+            <button class="btn-send" onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </main>
+</div>
+
+<script>
+    let gares = [];
+
+    async function loadStations() {
+        try {
+            const res = await fetch('/stations');
+            gares = await res.json();
+        } catch (e) { console.error("Erreur gares:", e); }
+    }
+    loadStations();
+
+    const stationInput = document.getElementById('stationInput');
+    const stationDropdown = document.getElementById('stationDropdown');
+    const chatBox = document.getElementById('chatBox');
+    const userInput = document.getElementById('userInput');
+
+    stationInput.addEventListener('input', () => {
+        const val = stationInput.value.toLowerCase();
+        stationDropdown.innerHTML = '';
+        if (val.length < 2) { stationDropdown.style.display = 'none'; return; }
+        
+        const filtered = gares.filter(g => g.toLowerCase().includes(val)).slice(0, 8);
+        
+        if (filtered.length > 0) {
+            filtered.forEach(gare => {
+                const item = document.createElement('div');
+                item.className = 'dropdown-item';
+                item.textContent = gare;
+                item.onclick = () => {
+                    stationInput.value = gare;
+                    stationDropdown.style.display = 'none';
+                    appendMsg(`Connexion établie avec la gare de <b>${gare}</b>. Je vous écoute.`, 'bot');
+                };
+                stationDropdown.appendChild(item);
+            });
+            stationDropdown.style.display = 'block';
+        }
+    });
+
+    function appendMsg(text, type, id = null) {
+        const div = document.createElement('div');
+        div.className = `msg ${type}`;
+        if(id) div.id = id;
+        div.innerHTML = text.replace(/\n/g, '<br>');
+        chatBox.appendChild(div);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    async function sendMessage() {
+        const q = userInput.value.trim();
+        const s = stationInput.value.trim();
+        
+        if (!s) {
+            appendMsg("<i>Je serais ravi de vous aider, mais j'ai besoin de savoir dans quelle gare vous vous trouvez. <br><br> Pourriez-vous la sélectionner dans la barre de recherche ci-dessus ?</i>", 'bot');
+            return;
+        }
+        
+        if (!q) return;
+
+        appendMsg(q, 'user');
+        userInput.value = '';
+
+        const loadingId = "load-" + Date.now();
+        appendMsg("<span class='loading'>Consultation des registres SNCF...</span>", 'bot', loadingId);
+
+        try {
+            const res = await fetch('/ask', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ station: s, question: q })
+            });
+            const data = await res.json();
+            
+            const loader = document.getElementById(loadingId);
+            if(loader) loader.remove();
+            
+            appendMsg(data.answer, 'bot');
+        } catch (e) { 
+            const loader = document.getElementById(loadingId);
+            if(loader) loader.innerHTML = " Désolé, la liaison avec le serveur a été interrompue.";
+        }
+    }
+
+    userInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(); });
+
+    document.addEventListener('click', (e) => {
+        if (e.target !== stationInput) stationDropdown.style.display = 'none';
+    });
+</script>
+</body>
+</html>

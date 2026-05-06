@@ -1,0 +1,124 @@
+SESSION DE TEST DU 06/05/2026 17:17:27
+
+TEST 1 | GARE: Paris Gare du Nord
+QUESTION: Bonjour ! Quels sont les horaires d'ouverture de la gare et proposez-vous des paniers fraîcheur ?
+REPONSE:
+Bonjour !
+
+Voici les horaires d'ouverture de la gare de Paris Gare du Nord :
+
+*   **Lundi :** 04:30-01:30 (jour normal et jour férié)
+*   **Mardi :** 04:30-01:30 (jour normal et jour férié)
+*   **Mercredi :** 04:30-01:30 (jour normal et jour férié)
+*   **Jeudi :** 04:30-01:30 (jour normal et jour férié)
+*   **Vendredi :** 04:30-02:30 (jour normal) et 04:30-01:30 (jour férié)
+*   **Samedi :** 04:30-02:30 (jour normal) et 04:30-01:30 (jour férié)
+*   **Dimanche :** 04:30-01:30 (jour normal et jour férié)
+
+Concernant les paniers fraîcheur, je n'ai pas d'information à ce sujet dans le contexte dont je dispose.
+----------------------------------------
+
+TEST 2 | GARE: Paris Gare du Nord
+QUESTION: Je m'ennuie un peu en attendant mon train, y a-t-il un piano ou des histoires à lire ?
+REPONSE:
+Bonjour ! Je suis Horizon AI et je suis là pour vous aider.
+
+Pour vous divertir en attendant votre train à Paris Gare du Nord, vous avez de quoi faire :
+
+*   Un **Distributeur d'Histoires Courtes** est à votre disposition.
+*   Un **Piano en libre service** est également disponible si vous souhaitez jouer quelques notes.
+
+J'espère que cela vous aidera à passer le temps agréablement !
+----------------------------------------
+
+TEST 3 | GARE: Paris Gare du Nord
+QUESTION: Est-ce qu'il y a des équipements pour aider une personne en fauteuil roulant ?
+REPONSE:
+Bonjour ! En tant qu'HORIZON AI, l'assistant digital officiel de la SNCF, je suis là pour vous aider.
+
+Oui, la gare de Paris Gare du Nord dispose de plusieurs équipements pour aider une personne en fauteuil roulant :
+
+*   Des fauteuils roulants sont à disposition.
+*   Les toilettes sont adaptées aux personnes en fauteuil roulant.
+*   L'accès depuis l'entrée se fait par ascenseur, rampe ou de plain-pied.
+*   Une assistance est proposée pour accéder aux quais et monter / descendre du train.
+*   Du personnel est présent pour vous accompagner.
+
+J'espère que ces informations vous seront utiles pour votre voyage !
+----------------------------------------
+
+TEST 4 | GARE: Gare de Lyon
+QUESTION: Coucou Horizon AI ! J'ai 1h à tuer, qu'est-ce que je peux faire pour m'occuper un peu ?
+REPONSE:
+Bonjour cher voyageur !
+
+Je suis Horizon AI, votre assistant digital officiel de la SNCF. Je suis là pour vous aider à passer le temps agréablement à la Gare de Lyon.
+
+Voici quelques activités que vous pouvez faire pour vous occuper :
+*   Profiter du **Piano en libre service**.
+*   Découvrir le **Distributeur d'Histoires Courtes**.
+*   Utiliser les espaces **Work & Station**.
+*   Recharger vos appareils aux bornes de **Rechargement portables et tablettes**.
+
+J'espère que cela vous aidera à passer un bon moment !
+----------------------------------------
+
+TEST 5 | GARE: Aix-en-Provence TGV
+QUESTION: Bonjour, j'ai besoin de travailler mais je n'ai plus de batterie. Vous avez une solution ?
+REPONSE:
+Bonjour !
+
+Absolument, à la gare d'Aix-en-Provence TGV, vous avez la possibilité de recharger vos portables et tablettes. Cela devrait vous permettre de travailler sereinement.
+
+N'hésitez pas si vous avez d'autres questions !
+----------------------------------------
+
+TEST 6 | GARE: Rosa Parks
+QUESTION: Salut ! Je voudrais acheter des légumes frais ce soir, c'est possible ?
+REPONSE:
+Bonjour !
+
+Oui, c'est tout à fait possible d'acheter des légumes frais à la gare Rosa Parks grâce au service Paniers Fraîcheur. Ce service est disponible le **Lundi** de **17h00 à 20h00**.
+----------------------------------------
+
+TEST 7 | GARE: Asnieres-sur-Seine
+QUESTION: Bonjour ! À quelle heure ferme la gare et où se trouvent les paniers fraîcheur ?
+REPONSE:
+Bonjour !
+
+Je n'ai pas d'information concernant les horaires de fermeture de la gare d'Asnières-sur-Seine dans les données dont je dispose.
+
+Cependant, je peux vous indiquer que les Paniers Fraîcheur sont disponibles à la gare d'Asnières-sur-Seine sur le Parvis. Ce service est proposé le **Mardi**, de **16h30 à 19h30**.
+
+N'hésitez pas si vous avez d'autres questions !
+----------------------------------------
+
+TEST 8 | GARE: Marne-la-Vallee Chessy
+QUESTION: Bonjour, je voyage avec une personne handicapée, quelle aide est disponible en gare ?
+REPONSE:
+Bonjour ! Je suis HORIZON AI, l'assistant digital officiel de la SNCF. Je suis là pour vous aider.
+
+Pour la gare de Marne-la-Vallée Chessy, voici les aides et équipements disponibles pour les personnes en situation de handicap :
+
+*   Assistance proposée pour accéder aux quais et monter / descendre du train.
+*   Information sonore en gare et/ou sur les quais.
+*   Toilettes adaptées aux personnes en fauteuil roulant.
+*   Écrans d'information en gare et/ou sur les quais.
+*   Bande d'éveil de vigilance sur les quais.
+*   Fauteuil roulant à disposition.
+*   Présence du personnel.
+*   Accès par ascenseur, rampe ou de plain-pied, depuis l'entrée.
+
+J'espère que ces informations vous seront utiles pour votre voyage.
+----------------------------------------
+
+TEST 9 | GARE: Gare de Lyon
+QUESTION: Quel temps fait-il à Paris demain ?
+REPONSE:
+Bonjour !
+
+En tant qu'HORIZON AI, l'assistant digital officiel de la SNCF, je suis là pour vous aider avec les informations relatives aux gares et aux services.
+
+Cependant, je n'ai pas d'informations sur la météo dans le contexte qui m'a été fourni. Je ne peux donc pas vous dire quel temps il fera à Paris demain.
+----------------------------------------
+

@@ -1,14 +1,20 @@
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import Chroma
-import os
+
 
 def get_vector_db(texts):
-    """Crée une base de données vectorielle en mémoire pour la recherche sémantique."""
+    """
+    Crée (ou recharge) une base vectorielle Chroma à partir d'une liste de textes.
+    Utilisée pour la recherche sémantique de fallback.
+    """
+    if not texts:
+        raise ValueError("La liste de textes fournie est vide.")
+
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-    # On crée la DB Chroma à partir des textes extraits des CSV
+
     vector_db = Chroma.from_texts(
         texts=texts,
         embedding=embeddings,
-        persist_directory="./chroma_db"
+        persist_directory="./chroma_db",
     )
     return vector_db
