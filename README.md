@@ -39,7 +39,7 @@ La pertinence du système repose sur l'ingestion de jeux de données réels prov
 
 ## Accès au Service
 * **Lien de production :** https://projet-sncf.onrender.com/
-* **Auteur :** [Ton Nom]
+* **Auteur :** SEGHILANI MIRA
 
 ---
 *Ce projet constitue une preuve de concept (PoC) dédiée à l'exploration des synergies entre l'ingénierie des données et l'intelligence artificielle appliquée aux services publics.*
