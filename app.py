@@ -9,6 +9,7 @@ CORS(app)
 
 # Fonction pour extraire dynamiquement la liste des gares pour le HTML
 def get_stations_list():
+    # Correction du chemin pour être compatible avec Linux (Render)
     path = os.path.join("data_source", "gares-de-voyageurs.csv")
     if os.path.exists(path):
         try:
@@ -46,5 +47,12 @@ def ask():
         return jsonify({"answer": f"Problème technique : {str(e)}"}), 500
 
 if __name__ == "__main__":
-    print(" Serveur Horizon AI prêt sur http://127.0.0.1:5000")
-    app.run(debug=True, port=5000)
+    # --- CONFIGURATION POUR LE DÉPLOIEMENT ---
+    # On récupère le port assigné par Render, sinon 5000 par défaut
+    port = int(os.environ.get("PORT", 5000))
+    
+    print(f" Serveur Horizon AI prêt sur le port {port}")
+    
+    # host="0.0.0.0" permet d'accepter les requêtes externes sur Render
+    # debug=False est préférable en production
+    app.run(host="0.0.0.0", port=port, debug=False)
